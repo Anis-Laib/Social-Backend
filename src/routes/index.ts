@@ -8,6 +8,11 @@ import chatRoutes from './chat.routes';
 
 const routes: Router = Router();
 
+routes.get('/', (req, res) => {
+    res.json({
+        message: 'Working!'
+    });
+});
 routes.use('/auth', authRoutes);
 routes.use('/users', userRoutes);
 routes.use('/groups', groupRoutes);

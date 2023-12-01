@@ -6,7 +6,7 @@ import { verifyToken } from '../middlewares/auth.middleware';
 const routes: Router = Router();
 
 routes.get('/', group.getAll);
-routes.get('/:id', group.getById);
+routes.get('/:id', verifyToken, group.getById);
 routes.get('/:id/members', group.getMembers);
 routes.get('/:id/pendings', verifyToken, group.getPendings);
 routes.get('/:id/posts', verifyToken, group.getPosts);
