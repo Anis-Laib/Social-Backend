@@ -16,5 +16,6 @@ COPY . .
 # The application listens on port 3000, so let's expose it
 EXPOSE 3333
 
-# Define the command to run the app
-CMD [ "node", "src/server.js" ]
+RUN npm run build
+
+RUN npm run start
