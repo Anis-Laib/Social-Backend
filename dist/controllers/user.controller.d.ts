@@ -1,0 +1,14 @@
+import { Request, Response } from "express";
+export declare const getAll: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const search: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getUser: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const create: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const update: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const follow: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const unfollow: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getFollowers: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getFollowing: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getOwnFollowers: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getOwnFollowing: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getOwnGroups: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getFeed: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;

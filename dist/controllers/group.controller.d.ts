@@ -1,0 +1,15 @@
+import { Request, Response } from 'express';
+export declare const getAll: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getById: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const search: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const create: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const update: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const remove: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getMembers: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getPendings: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const join: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const leave: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const accept: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const refuse: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const removeMember: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
+export declare const getPosts: (req: Request, res: Response) => Promise<Response<any, Record<string, any>>>;
