@@ -1,4 +1,4 @@
-import { Group, Post } from '@prisma/client';
+import { Group, Post } from '../generated/client';
 import { IUser } from 'interfaces/usert';
 import Joi from 'joi';
 
